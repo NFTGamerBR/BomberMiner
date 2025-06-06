@@ -69,7 +69,8 @@ self.C3_GetObjectRefTable = function () {
 		C3.Plugins.Sprite.Cnds.CompareFrame,
 		C3.Plugins.System.Exps.max,
 		C3.Plugins.System.Cnds.OnLayoutStart,
-		C3.Plugins.Browser.Acts.RequestFullScreen
+		C3.Plugins.Browser.Acts.RequestFullScreen,
+		C3.Plugins.Touch.Cnds.OnTapGesture
 	];
 };
 self.C3_JsPropNameTable = [
