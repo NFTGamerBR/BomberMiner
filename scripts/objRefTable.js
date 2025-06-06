@@ -19,6 +19,7 @@ self.C3_GetObjectRefTable = function () {
 		C3.Behaviors.MoveTo,
 		C3.Plugins.Audio,
 		C3.Plugins.Touch,
+		C3.Plugins.Browser,
 		C3.Plugins.System.Cnds.IsGroupActive,
 		C3.Behaviors.TileMovement.Cnds.IsMoving,
 		C3.Plugins.System.Cnds.Every,
@@ -66,7 +67,9 @@ self.C3_GetObjectRefTable = function () {
 		C3.Behaviors.Pin.Acts.PinByProperties,
 		C3.Plugins.Sprite.Acts.SetAnimFrame,
 		C3.Plugins.Sprite.Cnds.CompareFrame,
-		C3.Plugins.System.Exps.max
+		C3.Plugins.System.Exps.max,
+		C3.Plugins.System.Cnds.OnLayoutStart,
+		C3.Plugins.Browser.Acts.RequestFullScreen
 	];
 };
 self.C3_JsPropNameTable = [
@@ -116,6 +119,7 @@ self.C3_JsPropNameTable = [
 	{Sprite2: 0},
 	{BombUI: 0},
 	{placeBomb: 0},
+	{Browser: 0},
 	{tokens: 0},
 	{hurryPlayed: 0},
 	{ExplosionRange: 0},
@@ -153,5 +157,6 @@ self.InstanceType = {
 	moveDown: class extends self.ISpriteInstance {},
 	Sprite2: class extends self.ISpriteInstance {},
 	BombUI: class extends self.ISpriteInstance {},
-	placeBomb: class extends self.ISpriteInstance {}
+	placeBomb: class extends self.ISpriteInstance {},
+	Browser: class extends self.IInstance {}
 }
